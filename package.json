@@ -1,6 +1,6 @@
 {
 	"name": "@kokiito0926/tempedit",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"private": false,
 	"description": "一時的にエディターを起動することができるコマンドラインのツールです。",
 	"keywords": [
