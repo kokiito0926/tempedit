@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 
-import { $, os, fs, path, minimist } from "zx";
+import { $, os, fs, path, argv } from "zx";
 
 $.stdio = "inherit";
 
-const args = minimist(process.argv.slice(2));
-const name = args.name;
-const extension = args.extension || "txt";
-const template = args.template;
-const editor = args.editor || "code --wait";
+const name = argv?.name;
+const extension = argv?.extension || "txt";
+const template = argv?.template;
+const editor = argv?.editor || "code --wait";
 
 let tempFilePath = "";
 if (name) {
